@@ -141,7 +141,7 @@ export default createStore({
         mobile: 8802172121,
         img: '/img/profile/8802172121.jpeg',
         name: "Aayushmann",
-        counter:false,
+        counter: false,
         designation: "Director",
         business_name: "Covisor Infotech Pvt Ltd",
         description: "Web development, software development, digital marketing",
@@ -158,16 +158,17 @@ export default createStore({
           {
             icon: 'bi bi-globe fs-3', name: 'Website', url: 'https://covisor.in'
           },
-          {
-            icon: 'bi bi-currency-rupee fs-3', name: 'Pay', url: 'mr.ayushgupta@kotak'
-          },
+          // {
+          //   icon: 'bi bi-currency-rupee fs-3', name: 'Pay', 
+          //   // url: 'mr.ayushgupta@kotak'  
+          // },
           {
             icon: 'bi bi-linkedin fs-3', name: 'LinkedIn', url: 'https://www.linkedin.com/in/mr-ayushgupta/'
           },
         ],
         contactDetails: {
-          number: '+918802172121 , +918860012001',
-          email: 'ayush@covisor.in, manage.covisor@gmail.com',
+          number: '+918802172121',
+          email: 'ayush@covisor.in',
           location: '2nd Floor, Block B1/632, Janakpuri, Delhi, 110058',
           facebook: 'https://www.facebook.com/Ayush.Covisor/',
           instagram: 'https://www.instagram.com/yourpage',
@@ -482,8 +483,8 @@ export default createStore({
         id: 2,
         mobile: 9810963346,
         img: '/img/profile/9810963346.jpeg',
-        name: "Parvinder Singh", 
-        counter:false,
+        name: "Parvinder Singh",
+        counter: false,
         designation: "India 🇮🇳 Representative",
         business_name: "Thermofin GmbH",
         description: "Heat Exchangers for Industrial Refrigeration for Ammonia , Co2, Propane, Brine and Glycol",
@@ -496,7 +497,7 @@ export default createStore({
           // { name: 'Map', icon: 'bi-geo-fill fs-5', action: 'openMaps' }, 
           {
             icon: 'bi bi-globe fs-3', name: 'Website', url: 'https://www.thermofin.de/'
-          }, 
+          },
           {
             icon: 'bi bi-linkedin fs-3', name: 'LinkedIn', url: 'https://www.linkedin.com/in/parvinder-singh-4661939?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
           },
@@ -522,7 +523,7 @@ export default createStore({
       {
         id: 3,
         mobile: 9811084279,
-        counter:false,
+        counter: false,
         img: '/img/profile/9811084279.jpeg',
         name: "Gaurav Porwal ",
         designation: "Editor in Chief ",
@@ -534,10 +535,10 @@ export default createStore({
           { name: 'Email', icon: 'bi-envelope-fill fs-5', action: 'openEmail' },
           { name: 'Call', icon: 'bi-telephone-fill fs-5', action: 'openDialer' },
           { name: 'Whatsapp', icon: 'bi-whatsapp fs-5', action: 'openWhatsapp' },
-          { name: 'Map', icon: 'bi-geo-fill fs-5', action: 'openMaps' }, 
+          { name: 'Map', icon: 'bi-geo-fill fs-5', action: 'openMaps' },
           {
             icon: 'bi bi-globe fs-3', name: 'Website', url: 'https://taarezameenparmagazine.com'
-          }, 
+          },
           {
             icon: 'bi bi-instagram fs-3', name: 'Instagram', url: 'https://www.instagram.com/taarezameenparmagazine/?igsh=MXJteXJuYXRzbzZjZQ%3D%3D'
           },
@@ -555,11 +556,11 @@ export default createStore({
             text: "Magazine Coverage, PR Services, Digital Marketing, Book Publications"
           },
         ],
-        // promoters: [
-        //   { image: "/img/users/guruji.jpeg", name: "Guruji", },
-        //   { image: "/img/users/iskcon.jpeg", name: "Iskcon delhi", },
-        //   { image: "/img/users/bni.jpeg", name: "BNI dc stellar", },
-        // ],
+        promoters: [
+          { image: "/img/users/divya.jpeg", name: "Divya Jyoti Jagrati Sansthan", },
+          { image: "/img/users/lion.jpeg", name: "Lions International delhi veg", },
+          { image: "/img/users/bni.jpeg", name: "BNI dc amigos ", },
+        ],
       },
     ]
   },

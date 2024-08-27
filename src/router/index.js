@@ -4,7 +4,12 @@ const routes = [
   {
     path: "/",
     name: "home",
-    component: () => import("@/pages/ExplorePage.vue"),
+    component: () => import("@/pages/HomePage.vue"),
+  },
+  {
+    path: "/alldbc",
+    name: "Alldbc",
+    component: () => import("@/pages/Alldbc.vue"),
   },
   {
     path: "/profile/:userMobile",

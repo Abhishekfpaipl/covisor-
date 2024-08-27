@@ -20,7 +20,7 @@
         <h3>{{ user.name }}</h3>
         <small class="text-capitalize">{{ user.designation }}</small>
         <small class="text-capitalize">{{ user.business_name }}</small>
-        <small class="text-capitalize smaller text-muted text-ellipsis2" style="min-height: 36px;">{{ user.description }}
+        <small class=" smaller text-muted text-ellipsis2" style="min-height: 36px;">{{ user.description }}
         </small>
       </div>
       <div v-if="user.promoters" class="" style="min-height:130px">

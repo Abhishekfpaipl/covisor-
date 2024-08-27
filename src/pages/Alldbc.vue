@@ -10,12 +10,12 @@
     </div>
 </template>
 
-<script> 
+<script>
 import SecondSection from "@/components/SecondSection.vue";
 import GeneralCollection from "@/components/GeneralCollection.vue";
 export default {
     name: "HomeView",
-    components: { 
+    components: {
         SecondSection,
         GeneralCollection,
     },
