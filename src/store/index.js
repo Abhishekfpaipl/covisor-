@@ -514,11 +514,9 @@ export default createStore({
             text: "International Business Development and Marketing , linking the industry across the Globe, Trade and investment , GLobal Business Network Promotion and connection, Sales representative India at THERMOFIN GmbH"
           },
         ],
-        // promoters: [
-        //   { image: "/img/users/guruji.jpeg", name: "Guruji", },
-        //   { image: "/img/users/iskcon.jpeg", name: "Iskcon delhi", },
-        //   { image: "/img/users/bni.jpeg", name: "BNI dc stellar", },
-        // ],
+        promoters: [
+          { image: "/img/users/Thermofin.jpeg", name: "Thermofin", }, 
+        ],
       },
       {
         id: 3,
