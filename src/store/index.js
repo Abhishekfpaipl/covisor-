@@ -520,7 +520,7 @@ export default createStore({
       },
       {
         id: 3,
-        mobile: 9810963346,
+        mobile: 9811084279,
         counter: false,
         img: '/img/profile/9811084279.jpeg',
         name: "Gaurav Porwal ",
@@ -542,7 +542,7 @@ export default createStore({
           },
         ],
         contactDetails: {
-          number: '9810963346',
+          number: '9811084279',
           email: 'taarezameenpar.magazine@gmail.com',
           location: '2nd Floor, Block B1/632, Janakpuri, Delhi, 110058',
           website: 'https://taarezameenparmagazine.com',
