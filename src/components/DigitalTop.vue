@@ -4,8 +4,8 @@
         <div class="d-flex align-items-center gap-2" :class="{ 'hide-on-scroll': hideOnScroll }">
             <router-link to="/" class="text-decoration-none text-dark d-flex align-items-center">
                 <img v-if="user.img" :src="user.img" style="width: 40px;height:40px;object-fit: cover;object-position:top;" class="rounded">
-                <i v-else class="bi bi bi-person-square rounded fs-1" ></i>
-            </router-link>
+                <img v-else src="/img/dummyprofile.png" style="width: 40px;height:40px;object-fit: cover;object-position:top;" class="rounded border border-dark">
+             </router-link>
             <span class="text-uppercase text-dark fs-5">{{ user.name }}</span>
         </div>
     </div>

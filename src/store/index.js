@@ -141,7 +141,6 @@ export default createStore({
         mobile: 8802172121,
         img: '/img/profile/8802172121.jpeg',
         name: "Aayushmann",
-        counter: false,
         designation: "Director",
         business_name: "Covisor Infotech Pvt Ltd",
         description: "Web development, software development, digital marketing",
@@ -152,19 +151,9 @@ export default createStore({
           { name: 'Call', icon: 'bi-telephone-fill fs-5', action: 'openDialer' },
           { name: 'Whatsapp', icon: 'bi-whatsapp fs-5', action: 'openWhatsapp' },
           { name: 'Map', icon: 'bi-geo-fill fs-5', action: 'openMaps' },
-          {
-            icon: 'bi bi-facebook fs-3', name: 'Facebook', url: 'https://www.facebook.com/Ayush.Covisor/'
-          },
-          {
-            icon: 'bi bi-globe fs-3', name: 'Website', url: 'https://covisor.in'
-          },
-          // {
-          //   icon: 'bi bi-currency-rupee fs-3', name: 'Pay', 
-          //   // url: 'mr.ayushgupta@kotak'  
-          // },
-          {
-            icon: 'bi bi-linkedin fs-3', name: 'LinkedIn', url: 'https://www.linkedin.com/in/mr-ayushgupta/'
-          },
+          { icon: 'bi bi-facebook fs-3', name: 'Facebook', url: 'https://www.facebook.com/Ayush.Covisor/' },
+          { icon: 'bi bi-globe fs-3', name: 'Website', url: 'https://covisor.in' },
+          { icon: 'bi bi-linkedin fs-3', name: 'LinkedIn', url: 'https://www.linkedin.com/in/mr-ayushgupta/' },
         ],
         contactDetails: {
           number: '+918802172121',
@@ -478,13 +467,34 @@ export default createStore({
             ],
           },
         ],
+        counter: [
+          { text: 'Years Of Experience', value: 10, },
+          { text: 'No. of Happy Customers', value: 150, },
+          { text: 'Team Members Count', value: 20, },
+        ],
+        schedule: [
+          {
+            start_time: "9:00 AM",
+            end_time: "6:00 PM",
+            days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+          },
+          {
+            start_time: "9:00 AM",
+            end_time: "2:00 PM",
+            days: ["Saturday"],
+          },
+          {
+            start_time: "9:00 AM",
+            end_time: "12:00 PM",
+            days: ["Sunday"],
+          },
+        ]
       },
       {
         id: 2,
         mobile: 9810963346,
         img: '/img/profile/9810963346.jpeg',
         name: "Parvinder Singh",
-        counter: false,
         designation: "India 🇮🇳 Representative",
         business_name: "Thermofin GmbH",
         description: "Heat Exchangers for Industrial Refrigeration for Ammonia , Co2, Propane, Brine and Glycol",
@@ -515,13 +525,12 @@ export default createStore({
           },
         ],
         promoters: [
-          { image: "/img/users/Thermofin.jpeg", name: "Thermofin", }, 
+          { image: "/img/users/Thermofin.jpeg", name: "Thermofin", },
         ],
       },
       {
         id: 3,
         mobile: 9811084279,
-        counter: false,
         img: '/img/profile/9811084279.jpeg',
         name: "Gaurav Porwal ",
         designation: "Editor in Chief ",
@@ -558,6 +567,33 @@ export default createStore({
           { image: "/img/users/divya.jpeg", name: "Divya Jyoti Jagrati Sansthan", },
           { image: "/img/users/lion.jpeg", name: "Lions International delhi veg", },
           { image: "/img/users/bni.jpeg", name: "BNI dc amigos ", },
+        ],
+      },
+      {
+        id: 4,
+        mobile: 9711256073,
+        // img: '/img/profile/9811084279.jpeg',
+        name: "Gaurav Goyal ",
+        designation: "Owner",
+        business_name: "CLG Oil India Pvt Ltd ",
+        description: "Manufacturer Of lubricant oil and greases ",
+        rating: 4.5,
+        support: 200,
+        contact: [
+          { name: 'Email', icon: 'bi-envelope-fill fs-5', action: 'openEmail' },
+          { name: 'Call', icon: 'bi-telephone-fill fs-5', action: 'openDialer' },
+          { name: 'Whatsapp', icon: 'bi-whatsapp fs-5', action: 'openWhatsapp' },
+          { icon: 'bi bi-globe fs-3', name: 'Website', url: 'https://web.clgoilindia.com' },
+        ],
+        contactDetails: {
+          number: '9711256073',
+          email: 'goyal.gaurav9936@gmail.com',
+          website: 'https://web.clgoilindia.com',
+        },
+        counter: [
+          { text: 'Years Of Experience', value: 10, },
+          { text: 'No. of Happy Customers', value: 150, },
+          { text: 'Team Members Count', value: 20, },
         ],
       },
     ]

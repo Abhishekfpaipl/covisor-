@@ -1,11 +1,11 @@
 <template>
   <div class=" ">
     <DigitalTop :user="user" />
-    <TopNav />
+    <TopNav :user="user" />
     <TopSection :user="user" />
-    <ContactCard :user="user"/>
-    <InfoSection :user="user"/>
-    <SocialSchedule />
+    <ContactCard :user="user" />
+    <InfoSection :user="user" />
+    <SocialSchedule :user="user" />
     <DigitalFooter />
     <CollectionSection />
 
@@ -16,9 +16,9 @@
 <script>
 
 import TopNav from '@/components/TopNav.vue'
-import TopSection from '@/components/TopSection.vue' 
+import TopSection from '@/components/TopSection.vue'
 import InfoSection from '@/components/InfoSection.vue';
-// import SocialSchedule from '@/components/SocialSchedule.vue';
+import SocialSchedule from '@/components/SocialSchedule.vue';
 import ContactCard from '@/components/ContactCard.vue';
 import DigitalFooter from '@/components/DigitalFooter.vue';
 import DigitalTop from '@/components/DigitalTop.vue';
@@ -27,10 +27,10 @@ export default {
   name: "DigitalCard",
   components: {
     TopSection,
-    TopNav, 
+    TopNav,
     InfoSection,
     ContactCard,
-    // SocialSchedule,
+    SocialSchedule,
     DigitalFooter,
     DigitalTop
   },

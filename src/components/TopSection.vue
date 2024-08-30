@@ -13,7 +13,11 @@
           </span>
         </div>
         <div class="position-absolute shadow end-50" style="width:60px;height: 60px;top: -30px;">
-          <img :src="user.img" alt="Logo" class="rounded-3 border border-dark" style="width: 130px;height:130px;object-fit: cover; object-position: top">
+          <img v-if="user.img" :src="user.img" alt="Logo" class="rounded-3 border border-dark"
+            style="width: 130px;height:130px;object-fit: cover; object-position: top">
+          <img v-else src="/img/dummyprofile.png" alt="Logo" class="rounded-3 border border-dark"
+            style="width: 130px;height:130px;object-fit: cover; object-position: top">
+           
         </div>
       </div>
       <div class="d-flex flex-column align-items-center my-3">
