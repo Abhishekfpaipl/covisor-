@@ -4,7 +4,9 @@
     <BannerSection :user="user" />
     <ProfileSection :user="user" />
     <ContactCard :user="user" />
-    <InfoSection :user="user" />
+    <TagSection :user="user" />
+    <AboutSection :user="user" />
+    <CounterSection :user="user" />
     <SocialSchedule :user="user" />
     <DigitalFooter />
     <CollectionSection />
@@ -17,22 +19,26 @@
 
 import BannerSection from '@/components/BannerSection.vue'
 import ProfileSection from '@/components/ProfileSection.vue'
-import InfoSection from '@/components/InfoSection.vue';
+import AboutSection from '@/components/AboutSection.vue';
+import CounterSection from '@/components/CounterSection.vue';
 import SocialSchedule from '@/components/SocialSchedule.vue';
 import ContactCard from '@/components/ContactCard.vue';
 import DigitalFooter from '@/components/DigitalFooter.vue';
 import DigitalTop from '@/components/DigitalTop.vue';
+import TagSection from '@/components/TagSection.vue';
 
 export default {
   name: "DigitalCard",
   components: {
     BannerSection,
     ProfileSection,
-    InfoSection,
+    AboutSection,
+    CounterSection,
     ContactCard,
     SocialSchedule,
     DigitalFooter,
-    DigitalTop
+    DigitalTop,
+    TagSection
   },
   data() {
     return {

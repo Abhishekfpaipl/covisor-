@@ -140,12 +140,34 @@ export default createStore({
         id: 1,
         mobile: 8802172121,
         img: '/img/profile/8802172121.jpeg',
+        banner: [
+          {
+            image: '/img/banners/8802172121.jpeg',
+            alt: 'First slide',
+          },
+          {
+            image: '/img/banners/dm.jpeg',
+            alt: 'Second slide',
+          },
+          {
+            image: '/img/banners/business.jpeg',
+            alt: 'Third slide',
+          },
+          {
+            image: '/img/banners/erp.jpeg',
+            alt: 'Forth slide',
+          },
+        ],
         name: "Aayushmann",
-        designation: "Director",
+        designation: "Websites, digital marketing, mobile apps, custom softwares",
         business_name: "Covisor Infotech Pvt Ltd",
         description: "Web development, software development, digital marketing",
         rating: 4.5,
         support: 200,
+        tags: [
+          'Web Development', 'Development', 'Devel ', 'De ent', 'De nt', 'Deve nt',
+          'Web Development', 'Development', 'Devel ', 'De ent', 'De nt', 'Deve nt',
+        ],
         contact: [
           { name: 'Email', icon: 'bi-envelope-fill fs-5', action: 'openEmail' },
           { name: 'Call', icon: 'bi-telephone-fill fs-5', action: 'openDialer' },
@@ -494,6 +516,24 @@ export default createStore({
         id: 2,
         mobile: 9810963346,
         img: '/img/profile/9810963346.jpeg',
+        // banner: [
+        //   {
+        //     image: '/img/banners/8802172121.jpeg',
+        //     alt: 'First slide',
+        //   },
+        //   {
+        //     image: '/img/banners/dm.jpeg',
+        //     alt: 'Second slide',
+        //   },
+        //   {
+        //     image: '/img/banners/business.jpeg',
+        //     alt: 'Third slide',
+        //   },
+        //   {
+        //     image: '/img/banners/erp.jpeg',
+        //     alt: 'Forth slide',
+        //   },
+        // ],
         name: "Parvinder Singh",
         designation: "India 🇮🇳 Representative",
         business_name: "Thermofin GmbH",
@@ -531,9 +571,17 @@ export default createStore({
       {
         id: 3,
         mobile: 9811084279,
-        img: '/img/profile/9811084279.jpeg',
+        img: '/img/profile/9811084279.jpg',
+        banner: [
+          {
+            image: '/img/banners/9811084279.jpg',
+            alt: 'First slide',
+            label: 'First slide label',
+            content: 'Some representative placeholder content for the first slide.'
+          },
+        ],
         name: "Gaurav Porwal ",
-        designation: "Editor in Chief ",
+        designation: "PR services, Digital Marketing, TZP Magazine",
         business_name: "Taare Zameen Par Magazine",
         description: "PR Services ",
         rating: 4.5,
@@ -573,7 +621,14 @@ export default createStore({
         id: 4,
         mobile: 9711256073,
         img: '/img/profile/9711256073.jpg',
-        banner: '/img/banners/9711256073.jpg',
+        banner: [
+          {
+            image: '/img/banners/9711256073.jpg',
+            alt: 'First slide',
+            label: 'First slide label',
+            content: 'Some representative placeholder content for the first slide.'
+          },
+        ],
         name: "Gaurav Goyal ",
         designation: "Oil, lubricant and grease Manufacturer ",
         business_name: "CLG Oil India Pvt Ltd ",

@@ -1,59 +1,62 @@
 <template>
   <div>
-    <div class="bg-white border-top-0 border rounded-bottom-5 mx-2 shadow" style="margin-top: -30px;">
-      <div class="position-relative">
-        <div class="d-flex justify-content-between align-items-center px-3 pt-5 rounded-top-5">
-          <span @click="saveContact" class="d-flex flex-column align-items-center">
-            <i class="bi bi-person-plus-fill fs-4"></i>
-            <small>Contact</small>
-          </span>
-          <span @click="prepareShare" class="d-flex flex-column align-items-center" data-bs-toggle="modal"
-            data-bs-target="#shareModal">
-            <i class="bi bi-share-fill fs-4"></i>
-            <small class="ms-2">Share</small>
-          </span>
-        </div>
+    <div class="bg-white border-top-0 border rounded-bottom-5 mx-2 shadow" style="margin-top: 0px;">
 
-        <!-- Modal for Share Options -->
-        <div class="modal fade" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="shareModalLabel">Share</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <!-- Canvas for QR Code  -->
-                <div class="d-flex justify-content-center align-items-center">
-                  <canvas ref="qrcodeCanvas"></canvas>
-                </div>
-                <p class="mb-0 fw-bold text-capitalize fs-3">{{ user.name }}</p>
-                <p class="mb-3 fw-bold text-capitalize">{{ user.designation }}</p>
-                <div class="btn-group w-100">
-                  <button class="btn btn-outline-dark w-100" @click="downloadQRCode">Download QR</button>
-                  <!-- <button class="btn btn-dark w-100" @click="shareViaQRCode">Share via QR</button> -->
-                  <button class="btn btn-dark w-100" @click="shareNormally">Share via Link</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- User profile image and other details -->
-        <div class="position-absolute shadow end-50" style="width:60px;height: 60px;top: -30px;">
+      <!-- User profile image and other details -->
+      <div class="d-flex justify-content-between align-items-center p-3 rounded-top-5 mt-2">
+        <span @click="saveContact" class="d-flex flex-column align-items-center">
+          <i class="bi bi-person-plus-fill fs-4"></i>
+          <small>Contact</small>
+        </span>
+        <div class="">
           <img v-if="user.img" :src="user.img" alt="Logo" class="rounded-3 border border-dark"
             style="width: 130px;height:130px;object-fit: cover; object-position: top">
           <img v-else src="/img/dummyprofile.png" alt="Logo" class="rounded-3 border border-dark"
             style="width: 130px;height:130px;object-fit: cover; object-position: top">
         </div>
+        <span @click="prepareShare" class="d-flex flex-column align-items-center" data-bs-toggle="modal"
+          data-bs-target="#shareModal">
+          <i class="bi bi-share-fill fs-4"></i>
+          <small class="ms-2">Share</small>
+        </span>
       </div>
 
+      <!-- Modal for Share Options -->
+      <div class="modal fade" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="shareModalLabel">Share</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- Canvas for QR Code  -->
+              <div class="d-flex justify-content-center align-items-center">
+                <canvas ref="qrcodeCanvas"></canvas>
+              </div>
+              <p class="mb-0 fw-bold text-capitalize fs-3">{{ user.name }}</p>
+              <p class="mb-3 fw-bold text-capitalize">{{ user.designation }}</p>
+              <div class="btn-group w-100">
+                <button class="btn btn-outline-dark w-100" @click="downloadQRCode">Download QR</button>
+                <!-- <button class="btn btn-dark w-100" @click="shareViaQRCode">Share via QR</button> -->
+                <button class="btn btn-dark w-100" @click="shareNormally">Share via Link</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
       <!-- User information -->
-      <div class="d-flex flex-column align-items-center my-3">
-        <h3 class="mb-0">{{ user.name }}</h3>
-        <small class="smaller fw-bold text-capitalize mb-3">{{ user.designation }}</small>
+      <div class="d-flex flex-column align-items-center my-1">
+        <h3 class="mb-0 ">{{ user.name }}</h3>
+        <small class="smaller fw-bold text-capitalize mb-3 text-ellipsis2 px-2" style="min-height: 36px;">{{
+          user.designation }}</small>
         <small class="text-uppercase fw-bold text-muted">{{ user.business_name }}</small>
-        <small class="smaller text-muted text-ellipsis2 fw-bold" style="min-height: 36px;">{{ user.description }}</small>
+        <small class="smaller text-muted text-ellipsis2 fw-bold text-capitalize px-2" style="min-height: 36px;">{{
+          user.description
+          }}</small>
       </div>
 
       <!-- Promoters section -->
@@ -128,6 +131,25 @@ export default {
     saveContact() {
       const { number, email, location, facebook, website, youtube, linkedin, instagram } = this.user.contactDetails;
 
+      // Default address components
+      let streetAddress = '';
+      let city = '';
+      let state = '';
+      let postalCode = '';
+
+      // Check if location is provided and non-empty
+      if (location && location.trim()) {
+        // Split the location string into components
+        const addressComponents = location.split(',').map(component => component.trim());
+
+        // Ensure there are at least 4 components
+        [streetAddress, city, state, postalCode] = [
+          addressComponents[0] || '',
+          addressComponents[1] || '',
+          addressComponents[2] || '',
+          addressComponents[3] || ''
+        ];
+      }
       // Generate VCF content with the additional details
       const vcfContent = `BEGIN:VCARD
 VERSION:3.0
@@ -136,7 +158,7 @@ TITLE:${this.user.designation}
 ORG:${this.user.business_name} 
 TEL:${number}
 EMAIL:${email}
-ADR:${location}
+ADR;TYPE=Business:;;${streetAddress};${city};${state};${postalCode};India
 URL:${website}
 URL:${facebook}
 URL:${youtube}
