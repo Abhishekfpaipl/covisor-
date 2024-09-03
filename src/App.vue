@@ -1,63 +1,32 @@
 <template>
-  <DashboardNav v-if="!hide" />
+  <DashboardNav />
   <router-view />
-  <FooterBar v-if="!hidden" />
-  <FameFoot v-if="!hidden" />
 </template>
 <script>
 import DashboardNav from "@/components/DashboardNav.vue";
-// import FooterBar from "@/components/FooterBar.vue";
-// import FameFoot from "@/components/FameFoot.vue";
 export default {
   name: "App",
   components: {
     DashboardNav,
-    // FooterBar,
-    // FameFoot
   },
-  computed: {
-    hide() {
-      const hiddenPages = [
-        'LoginPage', 'RegistrationPage', 'EmailVerificationPage', 'ForgotPasswordPage', 'ResetPasswordPage', 'HomePage',
-        'BasicDetails', 'ConnectDetails', 'OverviewDetails', 'WorktimeDetails', 'BusinessTypeDetails', 'BrandingDetails',
-        'ProductList', 'CreateProduct', 'CollectionList', 'RewardsDetails', 'DashboardPage', 'ReviewListPage', 'SupportersDetails', 'BharatkeDetails', 'CategoryDetails', 'BankDetails', 'SocialDetails',
-        'DigitalCard', 'CollectionPage', 'NotificationDetails', 'RequestDetails', 'ShowcaseDetails', 'TimelineDetails', 'TestimonialDetails', 'StoryCoursel',
-      ]
-      return hiddenPages.includes(this.$route.name)
-    },
-    hidden() {
-      const hiddenPages = [
-        'LoginPage', 'RegistrationPage', 'EmailVerificationPage', 'ForgotPasswordPage', 'ResetPasswordPage',
-        'BasicDetails', 'ConnectDetails', 'OverviewDetails', 'WorktimeDetails', 'BusinessTypeDetails', 'BrandingDetails',
-        'ProductList', 'CreateProduct', 'CollectionList', 'RewardsDetails', 'DashboardPage', 'SupportersDetails', 'BharatkeDetails', 'CategoryDetails', 'BankDetails', 'SocialDetails', 'DigitalCard', 'CollectionPage',
-        'NotificationDetails', 'RequestDetails', 'ShowcaseDetails', 'TimelineDetails', 'TestimonialDetails', 'DemoPage',
-      ]
-      return hiddenPages.includes(this.$route.name)
-    }
-  }
 }
 </script>
 <style lang="scss">
-#app {
-  // font-family: Avenir, Helvetica, Arial, sans-serif;
+body {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none; //ios safari
+}
+
+#app { 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 
 .form-control {
   box-shadow: none !important;

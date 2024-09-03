@@ -165,8 +165,8 @@ export default createStore({
         rating: 4.5,
         support: 200,
         tags: [
-          'Web Development', 'Development', 'Devel ', 'De ent', 'De nt', 'Deve nt',
-          'Web Development', 'Development', 'Devel ', 'De ent', 'De nt', 'Deve nt',
+          'Chartered Accountant', 'Lawyers', 'Travel Agencies ', 'Doctors', 'Publishers', 'Insurance Agents',
+          'Astrologers', 'Fashion Designer', 'Car Dealers ', 'Public Relation',
         ],
         contact: [
           { name: 'Email', icon: 'bi-envelope-fill fs-5', action: 'openEmail' },
@@ -516,24 +516,6 @@ export default createStore({
         id: 2,
         mobile: 9810963346,
         img: '/img/profile/9810963346.jpeg',
-        // banner: [
-        //   {
-        //     image: '/img/banners/8802172121.jpeg',
-        //     alt: 'First slide',
-        //   },
-        //   {
-        //     image: '/img/banners/dm.jpeg',
-        //     alt: 'Second slide',
-        //   },
-        //   {
-        //     image: '/img/banners/business.jpeg',
-        //     alt: 'Third slide',
-        //   },
-        //   {
-        //     image: '/img/banners/erp.jpeg',
-        //     alt: 'Forth slide',
-        //   },
-        // ],
         name: "Parvinder Singh",
         designation: "India 🇮🇳 Representative",
         business_name: "Thermofin GmbH",
