@@ -17,14 +17,14 @@
             style="width: 130px;height:130px;object-fit: cover; object-position: top">
           <img v-else src="/img/dummyprofile.png" alt="Logo" class="rounded-3 border border-dark"
             style="width: 130px;height:130px;object-fit: cover; object-position: top">
-           
+
         </div>
       </div>
       <div class="d-flex flex-column align-items-center my-3">
-        <h3>{{ user.name }}</h3>
-        <small class="text-capitalize">{{ user.designation }}</small>
-        <small class="text-capitalize">{{ user.business_name }}</small>
-        <small class=" smaller text-muted text-ellipsis2" style="min-height: 36px;">{{ user.description }}
+        <h3 class="mb-0">{{ user.name }}</h3>
+        <small class="smaller fw-bold text-capitalize mb-3">{{ user.designation }}</small>
+        <small class="text-uppercase fw-bold text-muted">{{ user.business_name }}</small>
+        <small class="smaller text-muted text-ellipsis2 fw-bold" style="min-height: 36px;">{{ user.description }}
         </small>
       </div>
       <div v-if="user.promoters" class="" style="min-height:130px">
@@ -103,6 +103,8 @@ export default {
       const vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${this.user.name}
+TITLE:${this.user.designation}
+ORG:${this.user.business_name} 
 TEL:${number}
 EMAIL:${email}
 ADR:${location}
@@ -128,6 +130,7 @@ END:VCARD`;
       // Clean up
       document.body.removeChild(link);
     },
+
     submitQuery() {
       console.log('Submit Query')
       const data = {

@@ -572,11 +572,12 @@ export default createStore({
       {
         id: 4,
         mobile: 9711256073,
-        // img: '/img/profile/9811084279.jpeg',
+        img: '/img/profile/9711256073.jpg',
+        banner: '/img/banners/9711256073.jpg',
         name: "Gaurav Goyal ",
-        designation: "Owner",
+        designation: "Oil, lubricant and grease Manufacturer ",
         business_name: "CLG Oil India Pvt Ltd ",
-        description: "Manufacturer Of lubricant oil and greases ",
+        description: "Oil, lubricant and grease Manufacturer ",
         rating: 4.5,
         support: 200,
         contact: [
@@ -591,9 +592,13 @@ export default createStore({
           website: 'https://web.clgoilindia.com',
         },
         counter: [
-          { text: 'Years Of Experience', value: 10, },
-          { text: 'No. of Happy Customers', value: 150, },
-          { text: 'Team Members Count', value: 20, },
+          { text: 'Experience', value: 25, },
+          { text: 'Dealers', value: 250, },
+          { text: 'Employees', value: 100, },
+        ],
+        promoters: [
+          { image: "/img/users/airseol.png", name: "Airseol", },
+          { image: "/img/users/bni.jpeg", name: "BNI dc amigos ", },
         ],
       },
     ]

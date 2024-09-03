@@ -1,8 +1,8 @@
 <template>
   <div class=" ">
     <DigitalTop :user="user" />
-    <TopNav :user="user" />
-    <TopSection :user="user" />
+    <BannerSection :user="user" />
+    <ProfileSection :user="user" />
     <ContactCard :user="user" />
     <InfoSection :user="user" />
     <SocialSchedule :user="user" />
@@ -15,8 +15,8 @@
 
 <script>
 
-import TopNav from '@/components/TopNav.vue'
-import TopSection from '@/components/TopSection.vue'
+import BannerSection from '@/components/BannerSection.vue'
+import ProfileSection from '@/components/ProfileSection.vue'
 import InfoSection from '@/components/InfoSection.vue';
 import SocialSchedule from '@/components/SocialSchedule.vue';
 import ContactCard from '@/components/ContactCard.vue';
@@ -26,8 +26,8 @@ import DigitalTop from '@/components/DigitalTop.vue';
 export default {
   name: "DigitalCard",
   components: {
-    TopSection,
-    TopNav,
+    BannerSection,
+    ProfileSection,
     InfoSection,
     ContactCard,
     SocialSchedule,
