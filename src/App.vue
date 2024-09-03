@@ -1,7 +1,7 @@
 <template>
   <DashboardNav />
   <router-view />
-  <FooterBar />
+  <FooterBar v-if="!hidden" />
 </template>
 <script>
 import DashboardNav from "@/components/DashboardNav.vue";
@@ -12,6 +12,12 @@ export default {
     DashboardNav,
     FooterBar,
   },
+  computed: {
+    hidden() {
+      const hiddenPages = ['DigitalCard']
+      return hiddenPages.includes(this.$route.name)
+    },
+  }
 }
 </script>
 <style lang="scss">
