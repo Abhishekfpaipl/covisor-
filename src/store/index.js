@@ -557,15 +557,13 @@ export default createStore({
         banner: [
           {
             image: '/img/banners/9811084279.jpg',
-            alt: 'First slide',
-            label: 'First slide label',
-            content: 'Some representative placeholder content for the first slide.'
+            alt: 'First slide', 
           },
         ],
         name: "Gaurav Porwal ",
         designation: "PR services, Digital Marketing, TZP Magazine",
         business_name: "Taare Zameen Par Magazine",
-        description: "PR Services ",
+        description: "Amplify Your Brand with Expert Magazine Coverage, PR, Digital Marketing & Book Publications",
         rating: 4.5,
         support: 200,
         contact: [
@@ -606,9 +604,7 @@ export default createStore({
         banner: [
           {
             image: '/img/banners/9711256073.jpg',
-            alt: 'First slide',
-            label: 'First slide label',
-            content: 'Some representative placeholder content for the first slide.'
+            alt: 'First slide', 
           },
         ],
         name: "Gaurav Goyal ",

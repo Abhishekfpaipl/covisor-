@@ -121,7 +121,7 @@ export default {
       name: '',
       email: '',
       query: '',
-      selectedIndex: null,
+      selectedIndex: 0,
     };
   },
   methods: {
