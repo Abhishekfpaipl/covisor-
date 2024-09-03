@@ -5,9 +5,12 @@
             <router-link to="/" :class="{ 'hide-on-scroll': hideOnScroll }"
                 class="text-decoration-none text-dark d-flex align-items-center">
                 <img :src="`${publicPath}${img}`" style="width: 50px;object-fit: contain;filter: invert(1);">
-                <span class="text-uppercase text-white fs-3">Bharatke</span>
+                <div class="d-flex flex-column align-items-start">
+                    <span class="text-uppercase text-white fs-4 lh-1">Covisor Biz</span>
+                    <span class="text-capitalize text-white smaller">business networking card</span>
+                </div>
             </router-link>
-        </div> 
+        </div>
     </div>
 </template>
 

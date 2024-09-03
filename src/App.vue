@@ -1,13 +1,16 @@
 <template>
   <DashboardNav />
   <router-view />
+  <FooterBar />
 </template>
 <script>
 import DashboardNav from "@/components/DashboardNav.vue";
+import FooterBar from "@/components/FooterBar.vue";
 export default {
   name: "App",
   components: {
     DashboardNav,
+    FooterBar,
   },
 }
 </script>
@@ -20,7 +23,7 @@ body {
   -webkit-touch-callout: none; //ios safari
 }
 
-#app { 
+#app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
