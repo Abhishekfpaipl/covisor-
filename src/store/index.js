@@ -584,12 +584,12 @@ export default createStore({
           { name: 'Email', icon: 'bi-envelope-fill fs-5', action: 'openEmail' },
           { name: 'Call', icon: 'bi-telephone-fill fs-5', action: 'openDialer' },
           { name: 'Whatsapp', icon: 'bi-whatsapp fs-5', action: 'openWhatsapp' },
-          { icon: 'bi bi-globe fs-3', name: 'Website', url: 'https://web.clgoilindia.com' },
+          { icon: 'bi bi-globe fs-3', name: 'Website', url: 'https://clgoilindia.com' },
         ],
         contactDetails: {
           number: '9711256073',
           email: 'goyal.gaurav9936@gmail.com',
-          website: 'https://web.clgoilindia.com',
+          website: 'https://clgoilindia.com',
         },
         counter: [
           { text: 'Experience', value: 25, },
