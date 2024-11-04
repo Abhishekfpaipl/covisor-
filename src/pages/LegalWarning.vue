@@ -4,7 +4,7 @@
             <p class="fs-1">Legal Warning</p>
         </div>
         <div class="container py-5 rounded-top-5 bg-light" style="margin-top: -40px;">
-            <div class="card bg-light text-dark border-0"> 
+            <div class="card bg-light text-dark border-0">
                 <div class="card-body text-start">
                     <p><strong>Please read this legal warning ("Disclaimer") carefully before using our Lead
                             Management Software ("Software").</strong></p>
@@ -70,7 +70,7 @@
                         <p><strong>SalesWik</strong></p>
                         <p>2nd Floor, Block B1/632,
                             Janakpuri, 110058, Delhi, India</p>
-                        <p>support@salwsik.in</p>
+                        <p>biz@covisor.in</p>
                         <p>8860012001</p>
                     </div>
                 </div>

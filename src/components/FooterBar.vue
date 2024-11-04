@@ -86,16 +86,16 @@ export default {
                     name: 'Career',
                     link: '/career'
                 },
-                {
-                    id: 9,
-                    name: 'List your business',
-                    link: '/list-your-business'
-                },
-                {
-                    id: 9,
-                    name: 'Explore',
-                    link: '/explore'
-                },
+                // {
+                //     id: 9,
+                //     name: 'List your business',
+                //     link: '/list-your-business'
+                // },
+                // {
+                //     id: 9,
+                //     name: 'Explore',
+                //     link: '/explore'
+                // },
             ],
             links: [
                 {
@@ -118,11 +118,11 @@ export default {
                     name: 'Business',
                     link: '/business'
                 },
-                {
-                    id: 3,
-                    name: 'Business Account',
-                    link: '/business-seller'
-                },
+                // {
+                //     id: 3,
+                //     name: 'Business Account',
+                //     link: '/business-seller'
+                // },
 
             ],
         }
