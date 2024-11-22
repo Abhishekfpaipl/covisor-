@@ -139,6 +139,7 @@ export default createStore({
       {
         id: 1,
         mobile: 918802172121,
+        sid:"8802172121",
         img: '/img/profile/8802172121.jpeg',
         banner: [
           {
@@ -515,6 +516,7 @@ export default createStore({
       {
         id: 2,
         mobile: 919810963346,
+        sid:"9810963346",
         img: '/img/profile/9810963346.jpeg',
         name: "Parvinder Singh",
         designation: "India 🇮🇳 Representative",
@@ -553,6 +555,7 @@ export default createStore({
       {
         id: 3,
         mobile: 919811084279,
+        sid:"9811084279",
         img: '/img/profile/9811084279.jpg',
         banner: [
           {
@@ -600,6 +603,7 @@ export default createStore({
       {
         id: 4,
         mobile: 919711256073,
+        sid:"9711256073",
         img: '/img/profile/9711256073.jpg',
         banner: [
           {
@@ -640,8 +644,8 @@ export default createStore({
     getProducts: state => state.products,
     getCollection: state => state.collections,
     getUsers: state => state.users,
-    getUser: (state) => (userMobile) => {
-      let index = state.users.findIndex(user => user.mobile == userMobile);
+    getUser: (state) => (profilesId) => {
+      let index = state.users.findIndex(user => user.sid == profilesId);
       return state.users[index];
     },
   },

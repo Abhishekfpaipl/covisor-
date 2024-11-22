@@ -50,7 +50,7 @@ export default {
   },
   computed: {
     user() {
-      let userId = this.$route.params.userMobile;
+      let userId = this.$route.params.profilesId;
       return this.$store.getters.getUser(userId);
     },
   },

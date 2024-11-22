@@ -12,7 +12,7 @@ const routes = [
     component: () => import("@/pages/Alldbc.vue"),
   },
   {
-    path: "/profile/:userMobile",
+    path: "/profile/:profilesId",
     name: "DigitalCard",
     component: () => import("@/pages/DigitalCard.vue")
   },
