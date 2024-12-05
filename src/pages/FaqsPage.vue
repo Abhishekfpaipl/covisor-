@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-dark">
+    <div class="bg-dark top-padding">
         <div class="text-center fw-bold py-5 text-white" style="background-color: #000 !important;">
             <h1 class="text-center mb-4">Frequently Asked Questions</h1>
         </div>

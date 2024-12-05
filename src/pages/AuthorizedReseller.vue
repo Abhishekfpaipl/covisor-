@@ -1,50 +1,21 @@
 <template>
-    <div class="text-bg-light">
+    <div class="text-bg-light top-padding">
         <CarouselBanner />
         <ResllerImage />
-        <div class="text-center fw-bold py-5 text-bg-light">
+        <div class="text-center  py-5 text-bg-light">
             <div class="container">
-                <p class="fs-1 mb-0 text-capitalize">Partnership with us</p>
-                <p class="fs-5 text-capitalize">It's your own business, let it shine</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit dolores quas quae, perspiciatis eos
-                    voluptate neque natus ex repellendus. Ullam at molestias dicta, natus possimus eligendi nobis ea
-                    architecto tempora facilis recusandae dolor repudiandae asperiores veniam eos eius voluptates
-                    sapiente, doloremque qui quaerat repellat maiores. Corporis porro debitis qui architecto earum
-                    maxime officiis excepturi cum. Dolores ea quo tenetur nemo numquam eos voluptates ab quae vel
-                    corporis explicabo quidem praesentium, perferendis nobis aut rem pariatur culpa neque veniam,
-                    laudantium eligendi totam expedita animi reprehenderit! Atque adipisci iste odio dolores velit
-                    exercitationem dolor doloremque voluptatem neque, deleniti rerum! Eius repellendus iure esse officia
-                    quasi iusto nesciunt alias. Magni corporis illo excepturi quaerat esse eos amet omnis dicta.
-                    Reiciendis explicabo, amet sit repellendus dolores inventore, sed modi fuga corrupti cumque fugiat
-                    assumenda odit, accusamus porro blanditiis ducimus repellat itaque delectus. Distinctio, est
-                    recusandae? Repudiandae suscipit vero distinctio, exercitationem reiciendis ipsam, quae iure eum
-                    non, unde neque dolores doloremque esse. Eius voluptas similique vel officia, reprehenderit
-                    doloribus ad officiis odit numquam quam. Ipsam dicta perspiciatis, assumenda perferendis nesciunt
-                    quibusdam minima temporibus quisquam expedita, placeat quos. Consequatur nobis et exercitationem
-                    dolores! Saepe maxime dolor sunt et sit consequuntur magni, expedita iste perferendis, amet adipisci
-                    provident harum architecto assumenda soluta, libero perspiciatis error omnis? Soluta tempora illum
-                    facere, molestiae placeat assumenda tenetur labore in ut expedita saepe dolore sapiente provident
-                    rem officiis explicabo voluptatum perferendis delectus? Fugit hic, a distinctio voluptate commodi
-                    minima praesentium sequi quasi error impedit explicabo corrupti maiores facilis animi ipsum ipsa
-                    quis deserunt et? Explicabo mollitia vitae iusto nulla, minima quibusdam soluta ipsum eius ipsa,
-                    expedita maxime iure beatae omnis ratione quae sed culpa! Natus quia ipsum doloribus praesentium
-                    quos? Amet dolorem sit, quis consectetur explicabo tempora modi corporis dolorum qui ipsa
-                    exercitationem sequi est atque, numquam blanditiis esse neque nobis veniam suscipit id delectus
-                    molestiae aliquid impedit! Harum praesentium ut vitae quo voluptatibus quasi, porro ab explicabo
-                    numquam dolore eius perferendis mollitia, nostrum ea, nam aut. Voluptatum quos accusamus ab, porro
-                    repellendus, ut quaerat officiis est maxime nisi distinctio suscipit dolorem, quidem placeat! Quos
-                    consequuntur a expedita aliquid ad cumque molestias explicabo saepe nemo inventore ullam, iure,
-                    debitis veritatis natus fugit rerum possimus porro ea! Optio repudiandae porro aut debitis neque qui
-                    id sit quo veniam, quidem quis est perspiciatis ab praesentium deserunt, voluptatibus quos? Facere
-                    incidunt quia quasi? Cumque asperiores eaque fugiat sint enim nesciunt nam iure nobis,
-                    necessitatibus illum aut laudantium repudiandae error laborum, perspiciatis at, iusto pariatur! Ad,
-                    nisi sit natus, cupiditate placeat consectetur quae quas totam neque earum similique voluptatibus
-                    unde modi nobis sint ipsam fugiat libero hic illum magnam deserunt dolor. Fuga beatae placeat
-                    debitis itaque officia. Nisi nulla officiis, natus voluptates quae accusamus tenetur nam, explicabo
-                    est consequatur excepturi blanditiis aperiam itaque. Architecto ducimus, placeat repellat eaque
-                    velit harum voluptas accusantium neque? Expedita, nobis nesciunt! Commodi beatae provident
-                    blanditiis vero cum at repellendus quae aperiam pariatur dolore hic harum, quod dicta ad explicabo
-                    non! Sed libero est assumenda doloremque voluptas deserunt nostrum nobis tempore.</p>
+                <p class="fs-1 fw-bold mb-0 text-capitalize">Become our authorized reseller</p>
+                <p class="fs-5 fw-bold text-capitalize">Partnered with us and start your own business</p>
+                <p>The reselling business opportunity for digital business cards offers a unique chance to tap into the
+                    growing demand for professional digital identities in today's connected world. As businesses and
+                    individuals look for ways to update and modernize their professional presence, digital business
+                    cards have become an essential tool. Resellers can take advantage of this trend by offering
+                    customizable, shareable, and eco-friendly business cards to a wide range of potential clients.
+
+                    Digital business cards provide a modern, interactive solution for individuals and companies to share
+                    contact details, social profiles, and professional information. As a reseller, you can offer
+                    personalized digital cards, integrate unique features such as QR codes, payment links, social media
+                    sharing, and analytics tools that help clients track card views and engagement.</p>
             </div>
         </div>
         <div class="py-5" v-observe>

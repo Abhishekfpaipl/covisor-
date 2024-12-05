@@ -1,5 +1,5 @@
 <template>
-    <div class="text-bg-light">
+    <div class="text-bg-light top-padding">
         <div class="text-center fw-bold py-5 text-white" style="background-color: black " v-observe>
             <p class="fs-1">About Us</p>
         </div>

@@ -1,5 +1,5 @@
-<template>
-    <div class="bg-light">
+<template> 
+    <div class="bg-light top-padding">
         <CarouselBanner />
         <div class=" text-center fw-bold py-5 text-bg-light">
             <div class="container">

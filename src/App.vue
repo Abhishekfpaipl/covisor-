@@ -35,18 +35,26 @@ body {
   text-align: center;
   color: #2c3e50;
 }
-
+.top-padding{
+  padding-top: 70px;
+}
 
 .form-control {
   box-shadow: none !important;
 }
-
+.method1 {
+    background: linear-gradient(90deg, rgba(254, 242, 159, 1) 0%, rgba(210, 163, 73, 1) 50%, rgba(254, 242, 159, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 :root {
   --bg-primary: #014c75;
   --bg-secondary: #EB5E28;
   --bg-tertiary: #FEC007;
   --bg-forth: #FBF4F4;
-  --brand-color: #F5C518 !important
+  --brand-color: #F5C518 !important;
+  --bg-glow:linear-gradient(90deg, rgba(254, 242, 159, 1) 0%, rgba(210, 163, 73, 1) 50%, rgba(254, 242, 159, 1) 100%) !important;
 }
 
 .text-ellipsis {

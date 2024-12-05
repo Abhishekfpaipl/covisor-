@@ -2,15 +2,16 @@
     <div>
         <div class="">
 
-            <div class="position-relative bg-dark" style="width:100%; height: 600px;">
-                <!-- <img src="/img/deskbg.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;"> -->
+            <div class="position-relative bg-dark" style="width:auto; height: 100vh;object-fit: cover;">
+                <img src="/img/bannerDesktop.jpg" alt="" class="d-none d-md-block" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="/img/bannerMobile.jpg" alt="" class="d-md-none" style="width: 100%; height: 100%; object-fit: cover;">
                 <div class="center-content">
                     <h1 class="text-capitalize method1">
                         <span class="fw-bold text-uppercase">Let's Glow</span> <br> in your network with<br><span
                             class="fw-bold text-uppercase">Covisor Biz</span><br>
                     </h1>
                     <button class="btn text-dark fw-bold"
-                        style="background: linear-gradient(90deg, rgba(254, 242, 159, 1) 0%, rgba(210, 163, 73, 1) 50%, rgba(254, 242, 159, 1) 100%) !important;">Get
+                    style="background: var(--bg-glow)">Get
                         Started</button>
                 </div>
             </div>
@@ -26,12 +27,7 @@ export default {
 }
 </script>
 <style>
-.method1 {
-    background: linear-gradient(90deg, rgba(254, 242, 159, 1) 0%, rgba(210, 163, 73, 1) 50%, rgba(254, 242, 159, 1) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 
 .center-content {
     position: absolute;

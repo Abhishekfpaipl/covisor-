@@ -18,11 +18,12 @@
         <div class="tab-content" id="pills-tabContent">
             <div class="d-flex align-items-center shadow p-2 mb-3">
                 <div class="input-group  mb-3">
-                    <input type="search" class="form-control border-secondary text-dark" id="floatingInput" v-model="searchTerm" 
-                        @keyup.enter="search" ref="searchInput" placeholder="Search here...">
-                    <span class="input-group-text border-secondary" style="color:#FFF5DD !important; background-color: black !important" id="basic-addon1"> <i class="bi bi-search me-2"
-                            @click="search"></i> Search</span>
-                </div>  
+                    <input type="search" class="form-control border-secondary text-dark" id="floatingInput"
+                        v-model="searchTerm" @keyup.enter="search" ref="searchInput" placeholder="Search here...">
+                    <span class="input-group-text border-secondary"
+                        style="color:#FFF5DD !important; background-color: black !important" id="basic-addon1"> <i
+                            class="bi bi-search me-2" @click="search"></i> Search</span>
+                </div>
             </div>
             <div class="tab-pane fade" :class="{ 'show active': index === activeTabIndex }"
                 v-for="(price, index) in faqs" :key="index" :id="'content-' + index" role="tabpanel"
@@ -67,106 +68,92 @@ export default {
                     name: "All",
                     plans: [
                         {
-                            id: 1,
-                            question: "What else do I get with a reseller plan?",
-                            answer: "Your reseller plan includes the following extras: * Free Covisor Biz software including email marketing to use for your business."
+                            "question": "What is a digital business card?",
+                            "answer": "A digital business card is an electronic version of a traditional business card that can be shared via smartphones, email, or social media. It includes key details like your name, job title, contact information, and social media links, and can be customized with branding elements."
                         },
                         {
-                            id: 2,
-                            question: "What if I'm not satisfied with the reseller program?",
-                            answer: "We offer a money-back guarantee if you're not happy with the reseller program."
+                            "question": "How does the reseller program work?",
+                            "answer": "As a reseller, you partner with a digital business card provider and sell their services to your clients. You’ll earn a profit by marking up the pricing on the digital cards you sell. Many reseller programs offer customizable plans for individuals or businesses."
                         },
                         {
-                            id: 3,
-                            question: "Who determines the pricing on my reseller storefront?",
-                            answer: "You do. You can set the pricing for products and services individually, offer special sales and promotions, even provide certain customers with discount pricing. We also have a global pricing option that lets you quickly set the pricing for all of your products at once."
+                            "question": "How do I customize the digital cards?",
+                            "answer": "Most digital business card programs allow you to customize cards with your clients' branding, including logos, color schemes, and layout options. Some programs even allow you to add extra features like contact forms, social media links, payment options, and custom URLs."
                         },
                         {
-                            id: 4,
-                            question: "What's your commission payment process?",
-                            answer: "We offer a wide variety of payout options for your commissions (PayPal, EFT, Check, Covisor Biz Good as Gold). We usually pay the commission you earn during one month at the end of the following month. For example, if you earned commission on your reseller hosting sales during January, we'll pay you at the end of February."
+                            "question": "Is there a subscription fee?",
+                            "answer": "Yes, most digital business card services operate on a subscription model where customers pay annually or monthly to maintain their digital cards. You will receive a commission for each new customer and renewal."
                         },
                         {
-                            id: 5,
-                            question: "What does it mean to be a white-label reseller?",
-                            answer: "When you sell white-label products or services, the name of the company that produces those services is replaced with your company name. So whether you want to be a white label email reseller or a white label hosting reseller or both, the primary brand name your customers will see is yours. In fact, in most cases, your brand is the only brand your customers will ever see, with a few exceptions. For example, if you sell a domain, you must disclose the accredited domain registrar. In this instance, a customer would see your brand as the seller, but further down in the purchase agreement copy your customer will also see on behalf of WildWestDomains.com as the actual ICANN accredited registrar."
+                            "question": "Do I need a technical background to sell digital business cards?",
+                            "answer": "No, you don’t need a technical background to sell digital business cards. Most platforms offer easy-to-use interfaces for customizing and managing cards. Your main focus will be marketing, customer support, and growing your business."
                         },
                         {
-                            id: 6,
-                            question: "Can I customize my storefront?",
-                            answer: "Yes. You can use our Storefront Branding to make your storefront reflect your personal brand. We give you control over your site's domain name, site logo, color scheme, page layout and more. You can always go back and make changes as your business grows. Or, for those resellers that are familiar with WordPress, we encourage you to make a fully customized site using Covisor Biz's WordPress plugin, which you can learn more about here."
+                            "question": "Can I resell to both individuals and businesses?",
+                            "answer": "Yes, digital business cards can be sold to both individuals looking for a professional digital identity and businesses seeking to modernize their corporate branding. You can target entrepreneurs, professionals, small businesses, and large corporations."
                         },
                         {
-                            id: 7,
-                            question: "Who will provide customer service to my customers?",
-                            answer: "We have a dedicated team that can support your customers 24/7 by phone or email. Our award-winning team can represent your brand and take your customer service to the next level. They can also sell products on your behalf."
+                            "question": "Do I need to create my own website to sell digital cards?",
+                            "answer": "While having your own website can help establish credibility and promote your services, it's not always necessary. Many reseller programs provide you with marketing materials, landing pages, and sales tools that you can use to promote the digital business cards."
                         },
                         {
-                            id: 8,
-                            question: "What if I need help?",
-                            answer: "We're here to help 24/7. Our award-winning support team can help you get up and going, address any technical concerns, even provide tips and tricks on how to become a reseller. It's all included free with your plan."
+                            "question": "What support will I get as a reseller?",
+                            "answer": "Reseller programs typically offer training, sales tools, marketing materials, and customer support. You’ll have access to a dedicated team to help you with onboarding, handling customer queries, and offering troubleshooting assistance."
                         },
                         {
-                            id: 9,
-                            question: "Are there different ways to partner with Covisor Biz?",
-                            answer: "If you'd like to earn generous commissions through referral sales from your website visitors and email recipients, check out our Affiliate Program. Or, if you are looking for a way to manage all of your customers websites and clients, with one dashboard and a family of integrated tools, check out our Covisor Biz Pro Program."
+                            "question": "How much profit can I make as a reseller?",
+                            "answer": "Your profit margin will depend on the pricing model of the digital business card program and the volume of sales you generate. Typically, resellers earn a commission on each sale and renewal, and profits can increase as you expand your customer base."
                         },
                         {
-                            id: 10,
-                            question: "What is the difference between Covisor Biz Pro and Reseller?",
-                            answer: "Covisor Biz's Reseller program allows you to set your own prices and sell Covisor Biz products under your own brand, whereas Covisor Biz Pro provides developers and designers with free tools to manage their clients and sites."
-                        },
-                        {
-                            id: 8,
-                            question: "Who takes payment from my customer?",
-                            answer: "Although your customers will buy from your white labeled store front, when they enter the transaction experience they will be directed to a still white-labeled cart experience, but that contract, experience and payment collection are managed by WildWestDomains.com, a Covisor Biz entity, in the background. You, as the reseller, then get paid the net commissions from each transacted amount."
-                        },
-                    ]
-                },
-                {
-                    id: 5,
-                    name: "Customer Onboarding",
-                    plans: [
-                        {
-                            question: "How do I get started with your services?",
-                            answer: "You can get started by contacting us through our website, phone, or email. We will arrange an initial consultation to understand your needs."
-                        },
-                        {
-                            question: "What is the onboarding process like?",
-                            answer: "Our onboarding process includes an initial consultation, needs assessment, proposal presentation, contract signing, and project kickoff."
-                        },
-                        {
-                            question: "Do you offer a trial period for your services?",
-                            answer: "Yes, we offer a trial period for certain services. Please contact us for more details."
-                        },
-                        {
-                            question: "How do you ensure a smooth transition to your services?",
-                            answer: "We have a dedicated onboarding team that works closely with new clients to ensure a smooth transition, including data migration, training, and ongoing support."
+                            "question": "Do I need to keep stock or inventory?",
+                            "answer": "No, as a digital card reseller, you won’t need to manage stock. All the services are cloud-based, and your customers will receive their digital cards through an online platform."
                         }
                     ]
+
                 },
-                {
-                    id: 8,
-                    name: "Contact and Support",
-                    plans: [
-                        {
-                            question: "How can I contact your support team?",
-                            answer: "You can contact our support team via phone, email, or live chat available on our website."
-                        },
-                        {
-                            question: "What are your support hours?",
-                            answer: "Our support hours are 24/7, ensuring assistance is available whenever you need it."
-                        },
-                        {
-                            question: "Where can I find documentation and resources?",
-                            answer: "Documentation and resources can be found in the client portal on our website."
-                        },
-                        {
-                            question: "How do I provide feedback on your services?",
-                            answer: "We welcome feedback and you can provide it through our website, by email, or during regular client meetings."
-                        }
-                    ]
-                }
+                // {
+                //     id: 5,
+                //     name: "Customer Onboarding",
+                //     plans: [
+                //         {
+                //             question: "How do I get started with your services?",
+                //             answer: "You can get started by contacting us through our website, phone, or email. We will arrange an initial consultation to understand your needs."
+                //         },
+                //         {
+                //             question: "What is the onboarding process like?",
+                //             answer: "Our onboarding process includes an initial consultation, needs assessment, proposal presentation, contract signing, and project kickoff."
+                //         },
+                //         {
+                //             question: "Do you offer a trial period for your services?",
+                //             answer: "Yes, we offer a trial period for certain services. Please contact us for more details."
+                //         },
+                //         {
+                //             question: "How do you ensure a smooth transition to your services?",
+                //             answer: "We have a dedicated onboarding team that works closely with new clients to ensure a smooth transition, including data migration, training, and ongoing support."
+                //         }
+                //     ]
+                // },
+                // {
+                //     id: 8,
+                //     name: "Contact and Support",
+                //     plans: [
+                //         {
+                //             question: "How can I contact your support team?",
+                //             answer: "You can contact our support team via phone, email, or live chat available on our website."
+                //         },
+                //         {
+                //             question: "What are your support hours?",
+                //             answer: "Our support hours are 24/7, ensuring assistance is available whenever you need it."
+                //         },
+                //         {
+                //             question: "Where can I find documentation and resources?",
+                //             answer: "Documentation and resources can be found in the client portal on our website."
+                //         },
+                //         {
+                //             question: "How do I provide feedback on your services?",
+                //             answer: "We welcome feedback and you can provide it through our website, by email, or during regular client meetings."
+                //         }
+                //     ]
+                // }
             ],
         };
     },

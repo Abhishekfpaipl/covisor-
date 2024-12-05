@@ -1,5 +1,5 @@
 <template>
-    <div class="text-bg-dark" >
+    <div class="text-bg-dark top-padding" >
         <div class="">
             <ServicesFormBanner brandColorOne="#125252" brandName="work wity" :text="text" :customer="customer"
                 :service="service" :category="category" :place="place" v-observe />

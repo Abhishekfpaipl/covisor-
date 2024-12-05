@@ -1,5 +1,5 @@
 <template>
-    <div class="text-bg-light" >
+    <div class="text-bg-light top-padding" >
         <div class="text-white py-5" style=" background-color:black ;padding-bottom: 6rem !important;"
             v-observe>
             <h1 class="text-center mb-0 fw-bold">Contact Page</h1>

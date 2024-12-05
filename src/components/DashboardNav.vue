@@ -1,17 +1,18 @@
 <template>
-    <div class="containerr d-flex justify-content-between align-items-center" ref="topnav"
-        :style="`background:rgb(0,0,0, ${backgroundOpacity});`">
-        <div class="d-flex align-items-center gap-3">
-            <router-link to="/" :class="{ 'hide-on-scroll': hideOnScroll }"
-                class="text-decoration-none text-dark d-flex align-items-center">
-                <img :src="`${publicPath}${img}`" style="width: 50px;object-fit: contain;filter: invert(1);">
-                <div class="d-flex flex-column align-items-start">
-                    <span class="text-uppercase text-white fs-4 lh-1">Covisor Biz</span>
-                    <span class="text-capitalize text-white smaller">business networking card</span>
-                </div>
-            </router-link>
+    <div class="position-fixed w-100" style="z-index: 10;">
+        <div class="containerr d-flex justify-content-between align-items-center" ref="topnav">
+            <div class="d-flex align-items-center gap-3">
+                <router-link to="/" class="text-decoration-none text-dark d-flex align-items-center">
+                    <img :src="`${publicPath}${img}`" style="width: 50px; object-fit: contain;">
+                    <div class="d-flex flex-column align-items-start method1">
+                        <span class="text-uppercase fw-bold fs-4 lh-1">Covisor Biz</span>
+                        <span class="text-capitalize fw-bold smaller">business networking card</span>
+                    </div>
+                </router-link>
+            </div>
         </div>
     </div>
+
 </template>
 
 <script>
@@ -20,7 +21,7 @@ export default {
     data() {
         return {
             publicPath: process.env.BASE_URL,
-            img: "img/logo.svg",
+            img: "img/logo.png",
             backgroundOpacity: 0,
             hideOnScroll: true,
         };
@@ -56,11 +57,22 @@ export default {
 }
 
 .containerr {
-    position: fixed;
-    top: 0;
+    position: relative;
+    background: black;
+    padding: 1rem;
+}
+
+.containerr::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    background-color: #fff;
-    padding: 10px;
-    z-index: 10;
+    height: 1px;
+    /* Border height */
+    background: linear-gradient(90deg,
+            rgba(254, 242, 159, 1) 0%,
+            rgba(210, 163, 73, 1) 50%,
+            rgba(254, 242, 159, 1) 100%);
 }
 </style>

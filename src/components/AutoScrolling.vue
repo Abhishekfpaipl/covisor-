@@ -166,7 +166,7 @@ export default {
 };
 </script>
 
-<style>
+<style  >
 :root {
     --color-text: navy;
     --color-bg: papayawhip;
@@ -188,6 +188,12 @@ export default {
             hsl(0 0% 0% / 1) 20%,
             hsl(0 0% 0% / 1) 80%,
             hsl(0 0% 0% / 0));
+}
+.marquee:hover .marquee__group {
+    animation-play-state: paused;
+}
+.marquee__group:hover {
+    animation-play-state: paused;
 }
 
 .marquee__group {

@@ -24,6 +24,7 @@
                                     plan.name }}</div>
                                 <div class="card-body text-center">
                                     <p class="mb-0 card-title fs-3">₹ <span class="fw-bold">{{ plan.price }} </span></p>
+                                    <p class="mb-0 "> <span class="smaller">Plus 18% gst</span></p>
                                     <p><small class="text-capitalize">{{ plan.tag
                                             }}</small></p>
                                     <div class="d-flex justify-content-center align-items-center">
@@ -36,7 +37,7 @@
                                     <ul v-if="plan.features" class="list-group">
                                         <small class="text-start text-uppercase fw-bold my-2 text-primary">{{ plan.key
                                             }}</small>
-                                        <!-- <li v-for="(feature, featureIndex) in plan.features" :key="featureIndex"
+                                        <li v-for="(feature, featureIndex) in plan.features" :key="featureIndex"
                                             class="bg-light text-dark px-0 d-flex justify-content-between list-group-item text-start text-capitalize border-0">
                                             <div class="">
                                                 <i class="bi bi-check-circle text-success"></i>
@@ -47,11 +48,11 @@
                                             <i class="bi bi-info-circle" data-bs-toggle="tooltip"
                                                 data-bs-placement="top" data-bs-custom-class="custom-tooltip"
                                                 :data-bs-title="feature.tooltip"></i>
-                                        </li> -->
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="card-footer bg-light p-0 border-top pt-2">
-                                    <p class="card-text text-capitalize">{{ plan.description }}</p>
+                                    <p class="card-text text-capitalize smaller">{{ plan.description }}</p>
                                     <div class="d-flex justify-content-center gap-2 my-3">
                                         <button class="btn btn-danger w-100">{{ plan.button }}</button>
                                     </div>
@@ -81,154 +82,173 @@ export default {
                             id: 1,
                             name: "Lite",
                             price: "1,000",
-                            mrp: "2,000",
+                            mrp: "1,200",
                             tag: "/account/year",
-                            description: "Start with our free plan and upgrade only when you need additional features.",
+                            description: "Start with our lite plan and upgrade only when you need additional features.",
                             button: "Get Started",
                             key: "key features",
                             features: [
-                                {
-                                    text: "single Pipelines",
-                                    tooltip: "get a quick summary fo your customer-facing process and manage opportunities across different stages."
-                                },
-                                {
-                                    text: "500 Records",
-                                    tooltip: "Each row of data you enter in pipelines, contacts, companies, activities and notes are called records in covisor."
-                                },
-                                {
-                                    text: "Automations (3)",
-                                    tooltip: "Automate repetitive actions by setting up triggers and specifying the conditions to be met for the execution of the actions."
-                                },
-                                {
-                                    text: "telephony",
-                                    tooltip: "Make and receive phone calls, record them , set up automated voice responses, and use call routing--dicrectly in covisor."
-                                },
-                                {
-                                    text: "zapier, covisor desk , covisor campaigns, and covisor forms integration",
-                                    tooltip: "Seamless integrate covisor with other third party apps."
-                                },
-                                {
-                                    text: "apps for IOS, iPadOS, android and macOS",
-                                    tooltip: "Enjoy a fully featured covisor app for mobile devices that enables yout to do everthing you can do on your desktop while on the go."
-                                },
-                                {
-                                    text: "developer APIs",
-                                    tooltip: "Highly secure developer APIs that help you contact covisor to any third-party app of your choice"
-                                },
-                                {
-                                    text: "standard dashboard",
-                                    tooltip: "Monitor your business performance with charts and KPIs. Create your own dashboards and keep them privae or share them with everyone else."
-                                }
+                                { text: "Contact Details", },
+                                { text: "Social Profiles", },
+                                { text: "Share", },
+                                { text: "Qr Code", },
+                                { text: "Fun Facts", },
+                                { text: "Attributes", },
+                                // {
+                                //     text: "single Pipelines",
+                                //     tooltip: "get a quick summary fo your customer-facing process and manage opportunities across different stages."
+                                // },
+                                // {
+                                //     text: "500 Records",
+                                //     tooltip: "Each row of data you enter in pipelines, contacts, companies, activities and notes are called records in covisor."
+                                // },
+                                // {
+                                //     text: "Automations (3)",
+                                //     tooltip: "Automate repetitive actions by setting up triggers and specifying the conditions to be met for the execution of the actions."
+                                // },
+                                // {
+                                //     text: "telephony",
+                                //     tooltip: "Make and receive phone calls, record them , set up automated voice responses, and use call routing--dicrectly in covisor."
+                                // },
+                                // {
+                                //     text: "zapier, covisor desk , covisor campaigns, and covisor forms integration",
+                                //     tooltip: "Seamless integrate covisor with other third party apps."
+                                // },
+                                // {
+                                //     text: "apps for IOS, iPadOS, android and macOS",
+                                //     tooltip: "Enjoy a fully featured covisor app for mobile devices that enables yout to do everthing you can do on your desktop while on the go."
+                                // },
+                                // {
+                                //     text: "developer APIs",
+                                //     tooltip: "Highly secure developer APIs that help you contact covisor to any third-party app of your choice"
+                                // },
+                                // {
+                                //     text: "standard dashboard",
+                                //     tooltip: "Monitor your business performance with charts and KPIs. Create your own dashboards and keep them privae or share them with everyone else."
+                                // }
                             ]
                         },
                         {
                             id: 2,
-                            name: "Elite",
+                            name: "Pro",
                             price: "3,000",
-                            mrp: "6,000",
+                            mrp: "5,000",
                             tag: "/account/year",
-                            description: "Choose the right set of features you need to begin your CRM journey.",
+                            description: "Choose the right set of features you need to begin your Networking journey.",
                             button: "Get Started",
                             button2: "Buy now",
                             key: "key features",
                             features: [
-                                {
-                                    text: "Team Pipelines (3)",
-                                    tooltip: "Create distinct pipelines for every team and unify all your customer-facing operations."
-                                },
-                                {
-                                    text: "500000 Records",
-                                    tooltip: "Each row of data you enter in pipelines, contacts, companies, activities adn notes are called records in covisor. You can purchase additional records if you need to store more than 50000 records."
-                                },
-                                {
-                                    text: "Automations (30)",
-                                    tooltip: "Automate a wider range of instant actions to further reduce the time, effort, and errors that go into doing mundane tasks."
-                                },
-                                {
-                                    text: "Email & WhatsApp Business Integration",
-                                    tooltip: "Connect all major services to your covisor account with IMAP, send mass emails, and get email open/click notifications."
-                                },
-                                {
-                                    text: "Mass emails with email insights",
-                                    tooltip: "Send emails to multiple customers with a single click and use insights to capture the exact status of each email."
-                                },
-                                {
-                                    text: "No-code forms for contact & pipelines",
-                                    tooltip: "Deploy covisor webforms on your website easily to  collect information from your website visitors."
-                                },
-                                {
-                                    text: "10 custom fields/module",
-                                    tooltip: "Create custom fields that suit your business needs."
-                                },
-                                {
-                                    text: "Customizable dashboards with charts and KPIs",
-                                    tooltip: "Customize your dashboards according to your needs and analyze your business performance with carts and KPIs."
-                                },
-                                {
-                                    text: "Integrate with covisor Books/Invoice, covisor CRM and covisor Meeting",
-                                    tooltip: "Seamlessly integrate covisor with other third party apps."
-                                },
-                                {
-                                    text: "Integrate with Google Workspace, Microsoft 365, Zoom Meeting, Mailchimp, and Twitter",
-                                    tooltip: "Easily integrate with covisor apps and other third-party apps."
-                                },
-                                {
-                                    text: "Additional capabilities via toppings",
-                                    tooltip: "covisor offers topping like file cabinet and email in to enhance your CRM usage."
-                                }
+                                { text: "All features of lite plan", },
+                                { text: "Skillset", },
+                                { text: "Timeline", },
+                                { text: "Payment", },
+                                { text: "Website Widget", },
+                                // {
+                                //     text: "Team Pipelines (3)",
+                                //     tooltip: "Create distinct pipelines for every team and unify all your customer-facing operations."
+                                // },
+                                // {
+                                //     text: "500000 Records",
+                                //     tooltip: "Each row of data you enter in pipelines, contacts, companies, activities adn notes are called records in covisor. You can purchase additional records if you need to store more than 50000 records."
+                                // },
+                                // {
+                                //     text: "Automations (30)",
+                                //     tooltip: "Automate a wider range of instant actions to further reduce the time, effort, and errors that go into doing mundane tasks."
+                                // },
+                                // {
+                                //     text: "Email & WhatsApp Business Integration",
+                                //     tooltip: "Connect all major services to your covisor account with IMAP, send mass emails, and get email open/click notifications."
+                                // },
+                                // {
+                                //     text: "Mass emails with email insights",
+                                //     tooltip: "Send emails to multiple customers with a single click and use insights to capture the exact status of each email."
+                                // },
+                                // {
+                                //     text: "No-code forms for contact & pipelines",
+                                //     tooltip: "Deploy covisor webforms on your website easily to  collect information from your website visitors."
+                                // },
+                                // {
+                                //     text: "10 custom fields/module",
+                                //     tooltip: "Create custom fields that suit your business needs."
+                                // },
+                                // {
+                                //     text: "Customizable dashboards with charts and KPIs",
+                                //     tooltip: "Customize your dashboards according to your needs and analyze your business performance with carts and KPIs."
+                                // },
+                                // {
+                                //     text: "Integrate with covisor Books/Invoice, covisor CRM and covisor Meeting",
+                                //     tooltip: "Seamlessly integrate covisor with other third party apps."
+                                // },
+                                // {
+                                //     text: "Integrate with Google Workspace, Microsoft 365, Zoom Meeting, Mailchimp, and Twitter",
+                                //     tooltip: "Easily integrate with covisor apps and other third-party apps."
+                                // },
+                                // {
+                                //     text: "Additional capabilities via toppings",
+                                //     tooltip: "covisor offers topping like file cabinet and email in to enhance your CRM usage."
+                                // }
                             ]
                         },
                         {
                             id: 3,
-                            name: "Pro",
-                            price: "5,000",
-                            mrp: "10,000",
+                            name: "Elite",
+                            price: "10,000",
+                            mrp: "25,000",
                             tag: "/account/year",
-                            description: "Enjoy our advanced offering for fast-growing businesses and startups.",
+                            description: "Enjoy our advanced offering for fast-growing businesses and Networking.",
                             button: "Get Started",
                             button2: "Buy now",
                             key: "key features",
                             features: [
-                                {
-                                    text: "Team Pipelines",
-                                    tooltip: "Get aquick summary of every customer-facing operation by creating distinct pipelines for each team."
-                                },
-                                {
-                                    text: "100000 Records",
-                                    tooltip: "Each row of data you enter in pieplines, contacts, companies, activities and notes are called records in covisor. You can purchase additional records if you need to store more than 100000 records."
-                                },
-                                {
-                                    text: "Advanced automation (50)",
-                                    tooltip: "Schedule workflows that are triggered at specified time intervals."
-                                },
-                                {
-                                    text: "Stage transition rules",
-                                    tooltip: "Set up rules for moving deals in your pipelines, create checkpoints to enxure deals properly transition between stages."
-                                },
-                                {
-                                    text: "Sell globally with multiple currencies",
-                                    tooltip: "Run operations in more than just your local currency. covisor takes care of all exchange rates and conversions."
-                                },
-                                {
-                                    text: "Additional field type: lookup, user fields",
-                                    tooltip: "Create new fields and establish connections between records within different modules for your own context."
-                                },
-                                {
-                                    text: "25 custom fields per module",
-                                    tooltip: "Create custom fields that suit your business needs."
-                                },
-                                {
-                                    text: "Cleanup duplicates",
-                                    tooltip: "Manage and clean up duplicate records in your CRM more effectively."
-                                },
-                                {
-                                    text: "Target meter - dashboards",
-                                    tooltip: "Set and monitor important targets for your sales and customer-facing teams."
-                                },
-                                {
-                                    text: "Increased feature limits",
-                                    tooltip: "Enjoy the highest possible feature limits on key covisor features."
-                                }
+                                { text: "All features of pro plan", },
+                                { text: "Views", },
+                                { text: "Achievements", },
+                                { text: "Hearts", },
+                                { text: "Promotes", },
+                                { text: "Reactions", },
+                                { text: "Reviews", },
+                                { text: "Testimonial", },
+                                // {
+                                //     text: "Team Pipelines",
+                                //     tooltip: "Get aquick summary of every customer-facing operation by creating distinct pipelines for each team."
+                                // },
+                                // {
+                                //     text: "100000 Records",
+                                //     tooltip: "Each row of data you enter in pieplines, contacts, companies, activities and notes are called records in covisor. You can purchase additional records if you need to store more than 100000 records."
+                                // },
+                                // {
+                                //     text: "Advanced automation (50)",
+                                //     tooltip: "Schedule workflows that are triggered at specified time intervals."
+                                // },
+                                // {
+                                //     text: "Stage transition rules",
+                                //     tooltip: "Set up rules for moving deals in your pipelines, create checkpoints to enxure deals properly transition between stages."
+                                // },
+                                // {
+                                //     text: "Sell globally with multiple currencies",
+                                //     tooltip: "Run operations in more than just your local currency. covisor takes care of all exchange rates and conversions."
+                                // },
+                                // {
+                                //     text: "Additional field type: lookup, user fields",
+                                //     tooltip: "Create new fields and establish connections between records within different modules for your own context."
+                                // },
+                                // {
+                                //     text: "25 custom fields per module",
+                                //     tooltip: "Create custom fields that suit your business needs."
+                                // },
+                                // {
+                                //     text: "Cleanup duplicates",
+                                //     tooltip: "Manage and clean up duplicate records in your CRM more effectively."
+                                // },
+                                // {
+                                //     text: "Target meter - dashboards",
+                                //     tooltip: "Set and monitor important targets for your sales and customer-facing teams."
+                                // },
+                                // {
+                                //     text: "Increased feature limits",
+                                //     tooltip: "Enjoy the highest possible feature limits on key covisor features."
+                                // }
                             ]
                         }
                     ]

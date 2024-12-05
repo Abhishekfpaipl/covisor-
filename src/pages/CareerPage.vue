@@ -1,5 +1,5 @@
 <template>
-    <div class="text-bg-light">
+    <div class="text-bg-light top-padding">
         <div class="">
             <img src="/img/careerBanner.jpg" alt="banner" class="d-none d-md-block"
                 style="width: 100%; height:700px; object-fit: cover; object-position: center;">

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-dark">
+  <div class="bg-dark top-padding">
     <div class="" style=" background-color:black">
       <div class="container mb-3 py-5">
         <label for="categorySelect" class="form-label text-white fs-4">Filter by Category</label>

@@ -1,5 +1,5 @@
 <template>
-  <div class=" ">
+  <div class="top-padding ">
     <DigitalTop :user="user" />
     <BannerSection :user="user" />
     <ProfileSection :user="user" />

@@ -15,10 +15,10 @@
         </div>
 
         <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true" :class="{ 'show': showModal }">
-            <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
-                <div class="modal-content text-white position-relative" style="background-color: var(--brand-color)">
-                    <div class="modal-body">
+            aria-hidden="true" :class="{ 'show': showModal }" >
+            <div class="modal-dialog modal-dialog-centered modal-lg " role="document" >
+                <div class="modal-content text-white position-relative"  style="background:black">
+                    <div class="modal-body" >
                         <div class="row">
                             <div class="col-md-6">
                                 <img src="/img/welcome.svg" style="width: 250px; max-width: 90%" alt="">

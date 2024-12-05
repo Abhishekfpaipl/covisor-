@@ -1,5 +1,5 @@
 <template>
-    <div class="text-dark">
+    <div class="text-dark top-padding" >
         <TopBanner />
         <Banner brandColorOne="#125252" v-observe /> 
         <div class="my-5">

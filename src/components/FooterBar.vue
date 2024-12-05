@@ -76,11 +76,11 @@ export default {
                     name: 'Authorized seller',
                     link: '/authorized-reseller'
                 },
-                {
-                    id: 3,
-                    name: 'Bulk seller',
-                    link: '/bulk-seller'
-                },
+                // {
+                //     id: 3,
+                //     name: 'Bulk seller',
+                //     link: '/bulk-seller'
+                // },
                 {
                     id: 9,
                     name: 'Career',

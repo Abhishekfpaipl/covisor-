@@ -45,47 +45,41 @@ export default {
             servicesLeft: [
                 {
                     icon: 'bi bi-shop fs-3',
-                    heading: 'Build your online store front',
-                    description: 'Easily create and customize your online shop with user-friendly tools.'
+                    heading: 'Low Startup Cost',
+                    description: "Reselling digital business cards involves minimal upfront investment. Since you don't have to worry about physical products or shipping logistics, your primary expenses will be in marketing and customer acquisition."
                 },
                 {
                     icon: 'bi bi-currency-rupee fs-3',
-                    heading: 'Set your own prices',
-                    description: 'Flexibly set product prices and discounts to attract more customers.'
+                    heading: "Eco-Friendly",
+                    description: "As the world moves toward sustainability, digital business cards provide an eco-friendly alternative to traditional paper cards. By promoting digital cards, you’re contributing to reducing paper waste."
                 },
                 {
                     icon: 'bi bi-headset fs-3',
-                    heading: '24x7 award-winning support',
-                    description: 'Get help whenever you need it from our dedicated support team.'
+                    heading: "High Demand",
+                    description: "Digital business cards are in demand as more people move towards digital solutions for their personal and business networking. Offering these cards positions you at the forefront of a growing market."
                 },
                 {
                     icon: 'bi bi-diagram-2 fs-3',
-                    heading: 'Bulk subscriptions',
-                    description: 'Manage and sell multiple subscriptions with ease and efficiency.'
+                    heading: "Recurring Revenue Model",
+                    description:"Many digital business card programs offer subscription-based services, meaning you can earn recurring income from clients who renew their digital cards annually or monthly."
                 },
             ],
-            servicesRight: [
-
+            servicesRight: [ 
                 {
                     icon: 'bi bi-bar-chart-line fs-3',
-                    heading: 'Detailed Analytics',
-                    description: 'Gain insights into your business with comprehensive analytics tools.'
+                    heading: "Customizable Solutions",
+                    description: "You can offer clients a range of customization options such as logos, color schemes, and interactive features like QR codes, social media links, and personalized contact details."
                 },
                 {
                     icon: 'bi bi-lock fs-3',
-                    heading: 'Secure Payments',
-                    description: 'Ensure safe and secure transactions with our advanced payment security.'
+                    heading: "Scalable Business",
+                    description: "Reselling digital cards allows you to scale easily without worrying about inventory management or supply chain issues. Your only focus will be growing your client base and expanding your service offerings."
                 },
                 {
                     icon: 'bi bi-phone fs-3',
-                    heading: 'Mobile Friendly',
-                    description: 'Reach more customers with a mobile-friendly store that looks great on any device.'
-                },
-                {
-                    icon: 'bi bi-cloud-arrow-up fs-3',
-                    heading: 'Cloud Backup',
-                    description: 'Keep your data safe with automatic cloud backups.'
-                }
+                    heading: "Remote Business",
+                    description: "Reselling digital cards can be run from anywhere, making it a perfect opportunity for home-based or remote businesses. All you need is a computer and an internet connection to get started."
+                }, 
             ]
         }
     },

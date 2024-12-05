@@ -1,5 +1,5 @@
 <template>
-    <div class=" ">
+    <div class=" top-padding">
         <div class="">
             <SecondSection />
         </div>
